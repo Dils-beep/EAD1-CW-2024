@@ -1,0 +1,28 @@
+1.pinMode(pin,STATUS);
+Status-INPUT or OUTPUT
+
+2. HOW TO GIVE A DIGITIAL SIGNAL
+CODE: digitalWrite(pin,STATUS);
+STATUS- HIGH or LOW
+
+3. delay(ms)
+to stop the program.
+
+void setup()
+{
+  pinMode(4, OUTPUT);
+   pinMode(2, OUTPUT);
+}
+
+void loop()
+{
+  
+  digitalWrite(4,HIGH);
+   digitalWrite(2,LOW);
+  delay(1000);
+  digitalWrite(4,LOW);
+  digitalWrite(2,HIGH);
+  delay(1000);
+}
+analogWrite(pin,value)
+value - 0-255
